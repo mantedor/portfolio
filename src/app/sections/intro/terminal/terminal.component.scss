@@ -1,0 +1,108 @@
+@keyframes hideshow {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.window{
+    width: 50vw;
+    height: 350px;
+
+    font-family: term-default;
+    color: white;
+}
+
+.window-options{
+    display: flex;
+
+    justify-content: center;
+
+    padding: 8px;
+
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0);
+
+    background: #222c30;
+}
+
+.window-body{
+    overflow: auto;
+
+    height: 90%;
+
+    padding: 3px;
+
+    box-shadow: 0px 0px 6px rgb(0, 0, 0);
+    background: #444648;
+
+    &::-webkit-scrollbar-track{
+        background: #545f65;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #263139;
+    }
+}
+
+.highlight{
+    color: #69b16c
+}
+
+.term-selector{
+    width: 10px;
+    height: 10px;
+    background: white;
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    animation-name: hideshow;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.neofetch{
+    display: flex;
+    padding: 10px;
+
+    .neofetch-desc{
+        width: 350px;
+        text-align: justify;
+
+        padding: 0 0 0 10px;
+    }
+}
+.my-face{
+    width: 225px;
+    height: 225px;
+}
+
+@media screen and (max-width: 600px){
+    .window{
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .neofetch{
+        flex-direction: column;
+    
+        .neofetch-desc{
+            width: 300px;
+            padding: 10px 0 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 330px){
+    .neofetch{
+        .neofetch-desc{
+            width: 250px;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.header{
+    display: flex;
+    margin: 15px;
+
+    justify-content: flex-end;
+}
+
+.header-options{
+    display: flex;
+
+}
+
+.header-tab{
+    font-size: 40px;
+    padding: 0 0 0 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+    transition: 0.5s;
+
+    &:hover{
+        color: rgb(250, 250, 242);
+        background: black;
+    
+        &::after{
+            background: black;
+
+            width: 100%;
+        }
+    }
+}
+
+a::after{
+    display: block;
+    content: "";
+
+    width: 0;
+    height: 2px;
+
+    background: rgb(250, 250, 242);
+    transition: 0.5s;
+}
+
+.active>a{
+    background: black;
+    color: rgb(250, 250, 242);
+    
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        justify-content: center;
+    }
+
+    .header-options{
+        flex-direction: column;
+    }
+}

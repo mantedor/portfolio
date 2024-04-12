@@ -1,0 +1,58 @@
+@keyframes highlight-keywords{
+    to{
+        background-color: black;
+        color: rgb(250, 250, 242);
+    }
+}
+
+svg{
+    width: 30px;
+    padding: 0 12px 0 0;
+}
+
+.info{
+    padding: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    .info-content{
+        display: flex;
+    }
+}
+
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 40px;
+
+    padding: 0 40px 0 0;
+
+    div{
+        padding-bottom: 5px;
+    }
+}
+
+.contact{
+  display: flex;
+}
+
+.highlight{
+    animation-name: highlight-keywords;
+    animation-delay: 0.5;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@media screen and (max-width: 600px){
+    .info-content{
+        flex-direction: column;
+    }
+    .about-me{
+        padding: 0 0 0 0;
+    }
+}

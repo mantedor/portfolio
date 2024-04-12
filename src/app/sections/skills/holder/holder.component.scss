@@ -1,0 +1,38 @@
+.holder{
+    display: flex;
+
+    align-items: center;
+}
+
+.info-break{
+    width: 100%;
+    height: 2px;
+
+    background: black;
+    opacity: 0.75;
+}
+
+.title{
+    font-size: 30px;
+    padding: 2px;
+
+    text-transform: uppercase;
+
+    background: black;
+    color: rgb(250, 250, 242);
+}
+
+.desc{
+    text-align: justify;
+
+    width: 40vw;
+    padding: 0 0 0 12px;
+
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .desc{
+        width: 90%;
+    }
+}

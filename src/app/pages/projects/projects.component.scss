@@ -1,0 +1,32 @@
+.projects{
+    display: flex;
+
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 0 5% 0 5%;
+}
+.title{
+    color: rgb(250, 250, 242);
+    background: black;
+    font-size: 55px;
+
+}
+
+sections-projects{
+    width: 100%;
+
+    padding: 20px 0 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .projects{
+        align-items: center;
+
+        margin: 0;
+    }
+
+    sections-projects{
+        padding: 20px 0 0 0;
+    }
+}

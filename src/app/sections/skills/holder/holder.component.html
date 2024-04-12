@@ -1,0 +1,10 @@
+<div class="holder" [style.flexDirection]="right ? 'row-reverse' : 'row'">
+    <img class="logo" [src]="imageSrc" [style.padding]="right ? '0 0 0 20px' : '0 20px 0 0'" width="75px" height="75px">
+    <div class="info">
+        <div [style.textAlign]="right ? 'right' : 'initial'">
+            <span class="title">{{title}}</span>
+            <div class="info-break"></div>
+        </div>
+        <div class="desc" [style.padding]="right ? '0 12px 0 0' : '0 0 0 12px'">{{desc}}</div>
+    </div>
+</div>
