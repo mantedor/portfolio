@@ -3,7 +3,7 @@ import { Component, NgZone, AfterViewInit, ViewEncapsulation } from '@angular/co
 
 const neofetchAnswer = `
 <div class="neofetch">
-  <img class="my-face" src="../../../assets/avatar.png">
+  <img class="my-face" src="https://avatars.githubusercontent.com/u/32736682?v=4">
   <div class="neofetch-desc">
     <span class="neofetch-name highlight">
       Bruno Costa de Oliveira
@@ -12,7 +12,7 @@ const neofetchAnswer = `
     </span>
     <br/>
 
-    eae! me chamo Bruno e já sou dev tem um tempo, meu foco atualmente anda para a area web, principalmente através do Angular. 
+    eae! me chamo Bruno e já sou dev tem um tempo, meu foco atualmente anda para a area web, principalmente através do Angular.
     vejo o trabalho como fonte de aprendizado e algo essencial em garantir minha evolucao como programador, por isso tento me envolver e me esforçar ao maximo em projetos profissionais.
   </div>
 </div>
@@ -52,7 +52,7 @@ export class TerminalComponent implements AfterViewInit{
     for(let x = 0; x < this.messages.length; x++){
       //sabemos se a mensagem eh para ser um comando ou uma resposta pela paridade do x
       if(!(x % 2)){
-        //promise com setInterval pra simular a digitada 
+        //promise com setInterval pra simular a digitada
         await this.typeMessage(x)
 
         continue;
@@ -98,7 +98,7 @@ export class TerminalComponent implements AfterViewInit{
 
         this.messages[i] = `<div class="term-line"><span class="highlight">[bruno@portfolio:~]</span> ${typing}${selector}</div>`;
 
-        //o angular nao vai detectar mudança se eu nao pedir por conta do 
+        //o angular nao vai detectar mudança se eu nao pedir por conta do
         // runOutsideAngular
         this.zone.run(()=>this.formMessages(i))
         index++;
